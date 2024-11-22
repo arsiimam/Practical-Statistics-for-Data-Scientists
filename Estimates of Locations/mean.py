@@ -20,4 +20,3 @@ print(mean_score_math)
 filer_subject = 'English' #You can  change this value to anything inside the subject
 mean_score_filtered = df[df['Subject'] == filer_subject]['Score'].mean()
 print(mean_score_filtered)
-
