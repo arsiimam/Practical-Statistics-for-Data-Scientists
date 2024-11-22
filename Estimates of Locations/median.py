@@ -19,7 +19,7 @@ def calculate_median(data):
     #2. Find the middle Value.
     # If the length of data is odd, pick yhe middle element directly
     if n % 2 == 1:
-        median = sorted_data[n //2]
+        median = sorted_data[n //2] 
         
     #Ifthe length of data is even, calculate the average of the two middle element
     else:
