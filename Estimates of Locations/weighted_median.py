@@ -1,10 +1,10 @@
 import pandas as pd
-df = pd.read_csv('data.csv', delimiter=';')
-
 
 #Make a function to calculate weighted Median
 def weighted_median(Score, Weight):
-    df = pd.read_csv('data.csv', delimiter=';')
+   
+   #Create a DataFrame
+    df = pd.DataFrame({'Score': Score, 'Weight': Weight})
     df = df.sort_values('Score').reset_index(drop=True)
     
 
@@ -16,6 +16,8 @@ def weighted_median(Score, Weight):
     
     return median_row['Score']
 
-median_row = weighted_median(df['Score'], df['Weight'])
+#Read the csv file
+df = pd.read_csv('data.csv', delimiter=';')
+median = weighted_median(df['Score'], df['Weight'])
 
-print(median_row)
+print(median)
