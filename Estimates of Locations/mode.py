@@ -11,3 +11,7 @@ print(mode_result)
 mode_subject = df[df['Subject']=='Math']['Score'].mode()
 print('Mode from  the subject math is: ', mode_result)
 
+#Modeis Spesific dynamic subject
+subject = 'English' #Change this value to any subject
+mode_dynamic = df[df['Subject'] == subject ]['Score'].mode()
+print('Mode from the subject',subject , 'is: ',mode_subject)
