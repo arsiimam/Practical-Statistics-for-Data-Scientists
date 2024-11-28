@@ -12,3 +12,8 @@ print(trimmed_mean)
 trimed_mean_subject = trim_mean(df[df['Subject']=='Math']['Score'], triming_ratio)
 print('Trimed meanfor subject math is: ',trimed_mean_subject)
 
+#Trimed mean for spesific subject with dynamic filter
+subject_filter = 'English'#Change with anything inside subject coloumn
+
+trimmed_mean_dynamic = trim_mean(df[df['Subject']==subject_filter]['Score'],triming_ratio)
+print('Trimed mean for subject ',subject_filter,' is: ',trimmed_mean_dynamic)
