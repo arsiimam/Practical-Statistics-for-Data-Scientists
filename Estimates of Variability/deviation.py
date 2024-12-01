@@ -9,5 +9,10 @@ mean = df['Score'].mean()
 
 #Calculate deviation of each value
 df['deviation'] = df['Score'] - mean
+print(df['Score'], df['deviation'])
+
+#Calculate deviattionn for spesific subject
+mean_math= df['Score'=='Math'].mean()
+df['deviation'] = df[df['Subject']=='Math'] - mean_math
 
 print(df['Score'], df['deviation'])
