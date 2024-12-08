@@ -12,4 +12,9 @@ print('Median of the Score is: ', median)
 
 #3.  Calculate  mode
 mode = df['Score'].mode()
-print('Mode of teh score  is: ', mode)
+print('Mode of the  score  is: ', mode)
+
+#4.Calculate Perceltile
+percentiles = [25, 50, 75]
+results = df['Score'].quantile([p / 100 for p in percentiles])
+print(results)
