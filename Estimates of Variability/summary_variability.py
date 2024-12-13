@@ -19,3 +19,11 @@ print('Standard Deviation : ', std_deviation)
 #3. Range
 range = df['Score'].max() - df['Score'].min()
 print('Range : ',range)
+
+#4. Mean Absolute deviation
+mean = df['Score'].mean()
+df['deviation'] = abs(df['Score']-mean)
+abs_deviation = df['deviation'].sum()
+count_score = df['Score'].count()
+mad  = abs_deviation / count_score
+print('Mean Absolute Deviation : ',mad)
