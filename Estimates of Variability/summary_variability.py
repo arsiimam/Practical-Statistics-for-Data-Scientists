@@ -27,3 +27,9 @@ abs_deviation = df['deviation'].sum()
 count_score = df['Score'].count()
 mad  = abs_deviation / count_score
 print('Mean Absolute Deviation : ',mad)
+
+#5. Median ABsolute Deviation
+median = df['Score'].median()
+df['absolute_deviation'] = abs(df['Score'] - median)
+median_absolute_deviations = df['absolute_deviation'].median()
+print('Median Absolute Deviation  is :  ', median_absolute_deviations)
