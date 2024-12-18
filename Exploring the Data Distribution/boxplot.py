@@ -20,7 +20,7 @@ if 'Subject' in df.columns and 'Score' in df.columns:
 
     # Add labels and title
     plt.xticks(ticks=range(1, len(subjects) + 1), labels=subjects)  # X-axis labels
-    plt.title("Boxplot Untuk Nilai")
+    plt.title("Analysis of Student Score Distribution by Subject")
     plt.ylabel("Scores")
     plt.grid(axis='y', linestyle='--', alpha=0.7)
 
