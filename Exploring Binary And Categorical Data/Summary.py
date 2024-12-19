@@ -1,4 +1,5 @@
 import pandas  as  pd
+import numpy as np
 import os
 
 #Read CSV File
@@ -10,3 +11,5 @@ mode = df['Score'].mode()
 print(mode)
 
 #2. Expected Value
+expected_value = np.mean(df['Score'])
+print(expected_value)
