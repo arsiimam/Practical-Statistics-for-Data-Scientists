@@ -1,7 +1,7 @@
 import numpy as np
 
 # Data dari Soal 1
-data = [50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145]
+data = [165, 170, 160, 155, 175, 180, 165, 170, 160, 155,175, 180, 165, 170, 160, 155, 175, 180, 165, 170]
 
 # Standar deviasi untuk populasi (dengan ddof=0)
 pop_std_dev = np.std(data, ddof=0)
